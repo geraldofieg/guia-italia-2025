@@ -3,37 +3,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia de Viagem - Itália 2025</title>
   <link rel="stylesheet" href="estilo.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const goToTodayBtn = document.getElementById("goToToday");
+      if (goToTodayBtn) {
+        goToTodayBtn.addEventListener("click", () => {
+          const today = new Date();
+          const day = today.getDate().toString().padStart(2, '0');
+          const month = (today.getMonth() + 1).toString().padStart(2, '0');
+          const anchor = `${day}-${month}`;
+          const section = document.getElementById(anchor);
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+    });
+  </script>
 </head><body>
   <header>
-    <h1>Guia de Viagem - Itália 2025</h1>
-    <nav>
+    <nav class="menu-superior">
       <ul>
+        <li><a href="#home">Início</a></li>
         <li><a href="#cronograma">Cronograma Diário</a></li>
         <li><a href="#voos">Voos</a></li>
-        <li><a href="#sumario">Sumário Breve do Cronograma</a></li>
+        <li><a href="#bagagem">Bagagem</a></li>
+        <li><a href="#hospedagens">Hospedagens</a></li>
+        <li><a href="#carro">Carro</a></li>
+        <li><a href="#vinho">Dicas de Vinho</a></li>
+        <li><a href="#links">Links Úteis</a></li>
+        <li><a href="#sumario">Sumário</a></li>
+        <li><a href="#downloads">Downloads</a></li>
       </ul>
     </nav>
   </header>  <main>
-    <section id="cronograma">
-      <h2>Cronograma Diário</h2>
-      <ul>
-        <li><a href="#08-10">08/10 – Saída de Palmas</a></li>
-        <li><a href="#09-10">09/10 – Chegada em Roma</a></li>
-        <li><a href="#10-10">10/10 – Roma - Exploração Inicial</a></li>
-        <li><a href="#11-10">11/10 – Roma - Vaticano</a></li>
-        <li><a href="#12-10">12/10 – Coliseu, Fórum Romano e adjacências</a></li>
-        <li><a href="#13-10">13/10 – Roma > Assis</a></li>
-        <li><a href="#14-10">14/10 – Assis > Toscana Sul (Val d’Orcia & Montalcino)</a></li>
-        <li><a href="#15-10">15/10 – Val d’Orcia e Montalcino</a></li>
-        <li><a href="#16-10">16/10 – Rota Chianti</a></li>
-        <li><a href="#17-10">17/10 – Certaldo, San Gimignano</a></li>
-        <li><a href="#18-10">18/10 – Florença</a></li>
-        <li><a href="#19-10">19/10 – Florença > Veneza</a></li>
-        <li><a href="#20-10">20/10 – Veneza</a></li>
-        <li><a href="#21-10">21/10 – Veneza > Milão</a></li>
-        <li><a href="#22-10">22/10 – Milão</a></li>
-        <li><a href="#23-10">23/10 – Retorno</a></li>
-      </ul><h3 id="08-10">08 de Outubro de 2025 – Ida</h3>
+    <section id="home">
+      <h2>Bem-vindo ao seu Guia de Viagem - Itália 2025</h2>
+      <p>Use os menus acima para navegar por todas as informações da sua viagem. Clique no botão abaixo para ir direto ao dia atual do seu roteiro.</p>
+      <button id="goToToday">Ir para o dia da viagem</button>
+    </section><section id="cronograma">
+  <h2>Cronograma Diário</h2>
+  <ul>
+    <li><a href="#08-10">08/10 – Saída de Palmas</a></li>
+    <li><a href="#09-10">09/10 – Chegada em Roma</a></li>
+    <li><a href="#10-10">10/10 – Roma - Exploração Inicial</a></li>
+    <li><a href="#11-10">11/10 – Roma - Vaticano</a></li>
+    <li><a href="#12-10">12/10 – Coliseu, Fórum Romano e adjacências</a></li>
+    <li><a href="#13-10">13/10 – Roma > Assis</a></li>
+    <li><a href="#14-10">14/10 – Assis > Toscana Sul (Val d’Orcia & Montalcino)</a></li>
+    <li><a href="#15-10">15/10 – Val d’Orcia e Montalcino</a></li>
+    <li><a href="#16-10">16/10 – Rota Chianti</a></li>
+    <li><a href="#17-10">17/10 – Certaldo, San Gimignano</a></li>
+    <li><a href="#18-10">18/10 – Florença</a></li>
+    <li><a href="#19-10">19/10 – Florença > Veneza</a></li>
+    <li><a href="#20-10">20/10 – Veneza</a></li>
+    <li><a href="#21-10">21/10 – Veneza > Milão</a></li>
+    <li><a href="#22-10">22/10 – Milão</a></li>
+    <li><a href="#23-10">23/10 – Retorno</a></li>
+  </ul>
+
+  <h3 id="08-10">08 de Outubro de 2025 – Ida</h3>
   <p><strong>Trecho Doméstico:</strong> Palmas (PMW) → São Paulo (GRU)</p>
   <p><strong>Companhia Aérea:</strong> LATAM | <strong>Voo:</strong> LA3611</p>
   <p><strong>Partida:</strong> 10:30 | <strong>Chegada:</strong> 12:50</p>
