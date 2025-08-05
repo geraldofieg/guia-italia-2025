@@ -1,107 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia de Viagem - Itália 2025</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background-color: #225A86; color: white; padding: 1em; text-align: center; }
-    nav { background-color: #f4f4f4; padding: 0.5em 1em; }
-    nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; }
-    nav li { margin-right: 20px; position: relative; }
-    nav li ul { display: none; position: absolute; top: 100%; left: 0; background-color: #fff; border: 1px solid #ccc; padding: 10px; z-index: 1000; }
-    nav li:hover ul { display: block; }
-    nav a { text-decoration: none; color: #225A86; font-weight: bold; }
-    main { padding: 2em; }
-    footer { background-color: #eee; text-align: center; padding: 1em; margin-top: 2em; }
-    #gotoToday { background: #225A86; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; margin-top: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Viagem - Itália 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Guia de Viagem - Itália 2025</h1>
-    <button id="gotoToday" onclick="irParaDiaAtual()">Ir para o dia da viagem</button>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Início</a></li>
-      <li>
-        <a href="#">Cronograma Diário</a>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#cronograma">Cronograma Diário</a>
+        <a href="#voos">Voos</a>
+        <a href="#bagagem">Bagagem</a>
+        <a href="#hospedagens">Hospedagens</a>
+        <a href="#carro">Carro</a>
+        <a href="#vinhos">Dicas de Vinho</a>
+        <a href="#links">Links Úteis</a>
+        <a href="#downloads">Downloads</a>
+    </nav>
+
+    <section id="home">
+        <h1>Bem-vindo ao seu Guia de Viagem - Itália 2025</h1>
+        <p>Use os menus acima para navegar por todas as informações da sua viagem. Clique no botão abaixo para ir direto ao dia atual do seu roteiro.</p>
+        <button class="button-dia" onclick="irParaDia()">Ir para o dia da viagem</button>
+    </section>
+
+    <section id="cronograma">
+        <h2>Cronograma Diário</h2>
         <ul>
-          <li><a href="#dia-09-10">09/10 - Chegada em Roma</a></li>
-          <li><a href="#dia-10-10">10/10 - Roma - Início</a></li>
-          <li><a href="#dia-11-10">11/10 - Vaticano</a></li>
-          <li><a href="#dia-12-10">12/10 - Coliseu e adjacências</a></li>
-          <li><a href="#dia-13-10">13/10 - Roma > Assis</a></li>
-          <li><a href="#dia-14-10">14/10 - Assis > Val d'Orcia</a></li>
-          <li><a href="#dia-15-10">15/10 - Montalcino</a></li>
-          <li><a href="#dia-16-10">16/10 - Toscana Norte</a></li>
-          <li><a href="#dia-17-10">17/10 - San Gimignano</a></li>
-          <li><a href="#dia-18-10">18/10 - Florença</a></li>
-          <li><a href="#dia-19-10">19/10 - Veneza</a></li>
-          <li><a href="#dia-20-10">20/10 - Veneza</a></li>
-          <li><a href="#dia-21-10">21/10 - Milão</a></li>
-          <li><a href="#dia-22-10">22/10 - Milão</a></li>
-          <li><a href="#dia-23-10">23/10 - Retorno</a></li>
+            <li><a href="#dia-09-10">09/10 – Chegada em Roma</a></li>
+            <li><a href="#dia-10-10">10/10 – Roma - Exploração Inicial</a></li>
+            <li><a href="#dia-11-10">11/10 – Roma - Vaticano</a></li>
+            <li><a href="#dia-12-10">12/10 – Coliseu, Fórum Romano e adjacências</a></li>
+            <li><a href="#dia-13-10">13/10 – Roma > Assis</a></li>
+            <li><a href="#dia-14-10">14/10 – Assis > Toscana Sul (Val d’Orcia & Montalcino)</a></li>
+            <li><a href="#dia-15-10">15/10 – Val d’Orcia e Montalcino</a></li>
+            <li><a href="#dia-16-10">16/10 – Rota Chianti</a></li>
+            <li><a href="#dia-17-10">17/10 – Certaldo, San Gimignano</a></li>
+            <li><a href="#dia-18-10">18/10 – Florença</a></li>
+            <li><a href="#dia-19-10">19/10 – Florença > Veneza</a></li>
+            <li><a href="#dia-20-10">20/10 – Veneza</a></li>
+            <li><a href="#dia-21-10">21/10 – Veneza > Milão</a></li>
+            <li><a href="#dia-22-10">22/10 – Milão</a></li>
+            <li><a href="#dia-23-10">23/10 – Retorno</a></li>
         </ul>
-      </li>
-      <li><a href="#">Voos</a></li>
-      <li><a href="#">Bagagem</a></li>
-      <li><a href="#">Hospedagens</a></li>
-      <li><a href="#">Carro</a></li>
-      <li><a href="#">Dicas de Vinho</a></li>
-      <li><a href="#">Links Úteis</a></li>
-      <li><a href="#">Downloads</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Bem-vindo ao seu guia de viagem</h2>
-    <p>Use o menu acima para navegar entre os dias da sua viagem, conferir informações úteis, acessar reservas, verificar voos e muito mais.</p>
-    <section id="dia-09-10"><h3>09/10</h3></section>
-    <section id="dia-10-10"><h3>10/10</h3></section>
-    <section id="dia-11-10"><h3>11/10</h3></section>
-    <section id="dia-12-10"><h3>12/10</h3></section>
-    <section id="dia-13-10"><h3>13/10</h3></section>
-    <section id="dia-14-10"><h3>14/10</h3></section>
-    <section id="dia-15-10"><h3>15/10</h3></section>
-    <section id="dia-16-10"><h3>16/10</h3></section>
-    <section id="dia-17-10"><h3>17/10</h3></section>
-    <section id="dia-18-10"><h3>18/10</h3></section>
-    <section id="dia-19-10"><h3>19/10</h3></section>
-    <section id="dia-20-10"><h3>20/10</h3></section>
-    <section id="dia-21-10"><h3>21/10</h3></section>
-    <section id="dia-22-10"><h3>22/10</h3></section>
-    <section id="dia-23-10"><h3>23/10</h3></section>
-  </main>
-  <footer>
-    <p>Guia criado para uso pessoal durante a viagem à Itália em outubro de 2025.</p>
-  </footer>
-  <script>
-    function irParaDiaAtual() {
-      const hoje = new Date();
-      const inicio = new Date('2025-10-09');
-      const fim = new Date('2025-10-23');
+    </section>
 
-      if (hoje < inicio) {
-        alert('Sua viagem ainda não começou!');
-        return;
-      }
-      if (hoje > fim) {
-        alert('Sua viagem já terminou!');
-        return;
-      }
+    <section id="voos"><h2>Voos</h2></section>
+    <section id="bagagem"><h2>Bagagem</h2></section>
+    <section id="hospedagens"><h2>Hospedagens</h2></section>
+    <section id="carro"><h2>Reserva de Carro</h2></section>
+    <section id="vinhos"><h2>Dicas de Vinho</h2></section>
+    <section id="links"><h2>Links Úteis</h2></section>
+    <section id="downloads"><h2>Arquivos e Downloads</h2></section>
 
-      const dia = String(hoje.getDate()).padStart(2, '0');
-      const mes = String(hoje.getMonth() + 1).padStart(2, '0');
-      const destinoId = `dia-${dia}-${mes}`;
-      const destino = document.getElementById(destinoId);
-      if (destino) {
-        destino.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        alert('Seção do dia não encontrada.');
-      }
-    }
-  </script>
+    <footer>
+        <p>Guia de Viagem - Itália 2025 | Desenvolvido por Geraldo</p>
+    </footer>
+
+    <script>
+        function irParaDia() {
+            const hoje = new Date();
+            const dia = String(hoje.getDate()).padStart(2, '0');
+            const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+            const ano = hoje.getFullYear();
+
+            const viagemInicio = new Date('2025-10-09');
+            const viagemFim = new Date('2025-10-23');
+            const hojeFormatado = new Date(`${ano}-${mes}-${dia}`);
+
+            if (hojeFormatado < viagemInicio) {
+                alert('Sua viagem ainda não começou!');
+                return;
+            }
+
+            if (hojeFormatado > viagemFim) {
+                alert('Sua viagem já terminou.');
+                return;
+            }
+
+            const id = `dia-${dia}-${mes}`;
+            const destino = document.getElementById(id);
+
+            if (destino) {
+                destino.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                alert('Não há cronograma cadastrado para hoje.');
+            }
+        }
+    </script>
 </body>
 </html>
