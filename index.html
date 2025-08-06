@@ -2,22 +2,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia de Viagem - Itália 2025</title>
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="style.css">
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const hoje = new Date();
-      const dias = document.querySelectorAll('[id^="dia-"]');
-      for (const dia of dias) {
-        const data = dia.getAttribute('data-date');
-        if (data) {
-          const dataElemento = new Date(data);
-          if (dataElemento.toDateString() === hoje.toDateString()) {
-            dia.scrollIntoView({ behavior: 'smooth' });
-            break;
-          }
-        }
-      }
-    });
+      const datas = {
+        "08-10": new Date("2025-10-08"),
+        "09-10": new Date("2025-10-09"),
+        "10-10": new Date("2025-10-10"),
+        "11-10": new Date("2025-10-11"),
+        "12-10": new Date("2025-10-12"),
+        "13-10": new Date("2025-10-13"),
+        "14-10": new Date("2025-10-14"),
+        "15-10": new Date("2025-10-15"),
+        "16-10": new Date("2025-10-16"),
+        "17-10": new Date("2025-10-17"),
+        "18-10": new Date("2025-10-18"),
+        "19-10": new Date("2025-10-19"),
+        "20-10": new Date("2025-10-20"),
+        "21-10": new Date("2025-10-21"),
+        "22-10": new Date("2025-10-22"),
+        "23-10": new Date("2025-10-23")
+      };for (const id in datas) {
+    if (hoje <= datas[id]) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView();
+      break;
+    }
+  }
+});
+
   </script>
 </head><body>
   <header>
@@ -30,40 +44,52 @@
         <li><a href="#hospedagens">Hospedagens</a></li>
         <li><a href="#carro">Carro</a></li>
         <li><a href="#dicas">Dicas de Viagem</a></li>
-        <li><a href="#pendencias">Pendências</a></li>
-        <li><a href="#uteis">Links Úteis</a></li>
+        <li><a href="#links">Links Úteis</a></li>
         <li><a href="#sumario">Sumário Breve do Cronograma</a></li>
         <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#pendencias">Pendências</a></li>
       </ul>
     </nav>
   </header>  <main>
     <section id="cronograma">
-      <h2>Cronograma Diário</h2>
-      <h3 id="dia-08" data-date="2025-10-08">08/10 – Saída de Palmas</h3>
-      <p><strong>Ação:</strong> Início da viagem com embarque no aeroporto de Palmas.</p>
-      <p><strong>Passageiros:</strong> Geraldo e Patrícia</p>
-      <p><strong>Voo LATAM LA3611</strong></p>
-      <p><strong>Origem:</strong> Palmas (PMW)</p>
-      <p><strong>Destino:</strong> São Paulo – Guarulhos (GRU)</p>
-      <p><strong>Horário de saída:</strong> 10h30</p>
-      <p><strong>Horário de chegada:</strong> 12h50</p>
-      <p><strong>Cabine:</strong> Econômica – Tarifa Standard</p>
-      <p><strong>Bagagem despachada:</strong> 1 peça de até 23kg por passageiro permitida</p>
-      <p><strong>Observação:</strong> Após o desembarque em Guarulhos, retirar a bagagem e realizar novo despacho para o voo internacional.</p>
-      <ul>
-        <li><a href="arquivos/Comprovante-LATAM-LA9579432SJTJ.pdf" target="_blank">Cartão de embarque – Geraldo (ida)</a></li>
-        <li><a href="arquivos/Comprovante-LATAM-LA9575470YLCW.pdf" target="_blank">Cartão de embarque – Patrícia (ida)</a></li>
-      </ul><!-- Os conteúdos dos dias 09 e 10 e demais pendências serão mantidos abaixo conforme já haviam sido implementados -->
+      <h2>Cronograma Diário</h2><h3 id="08-10">08 de Outubro de 2025 – Ida</h3>
+  <p><strong>Trecho Doméstico:</strong> Palmas (PMW) → São Paulo (GRU)</p>
+  <p><strong>Companhia Aérea:</strong> LATAM | <strong>Voo:</strong> LA3611</p>
+  <p><strong>Partida:</strong> 10:30 | <strong>Chegada:</strong> 12:50</p>
+  <p><strong>Bagagem:</strong> 1 item pessoal + 1 mala de cabine.</p>
+  <p><strong>Ação:</strong> Após o desembarque em Guarulhos, retire sua bagagem para o novo despacho no voo internacional.</p>
+  <p><strong>Cartões de Embarque:</strong>
+    <a href="arquivos/Comprovante-LATAM-LA9579432SJTJ.pdf" target="_blank">Geraldo</a> |
+    <a href="arquivos/Comprovante-LATAM-LA9575470YLCW.pdf" target="_blank">Patrícia</a>
+  </p>
+
+  <hr style="margin: 20px 0;">
+
+  <p><strong>Trecho Internacional:</strong> São Paulo (GRU) → Frankfurt (FRA)</p>
+  <p><strong>Companhia Aérea:</strong> Lufthansa | <strong>Voo:</strong> LH507</p>
+  <p><strong>Rota:</strong> GRU Terminal 3 → FRA Terminal 1</p>
+  <p><strong>Partida:</strong> 23:45 | <strong>Chegada:</strong> 16:25 do dia seguinte</p>
+  <p><strong>Bagagem:</strong> 1 item pessoal, 1 mala de mão (10 kg), 1 mala despachada (23 kg)</p>
+  <p><strong>Ação:</strong> Realize o check-in internacional no Terminal 3.</p>
+
+  <h3 id="09-10">09 de Outubro de 2025 – Chegada em Roma</h3>
+  <p><strong>Chegada em Frankfurt:</strong> 16:25</p>
+  <p><strong>Ação:</strong> Retire a bagagem e realize o novo despacho para o voo até Roma.</p>
+  <p><strong>Trecho:</strong> Frankfurt (FRA) → Roma (FCO)</p>
+  <p><strong>Companhia Aérea:</strong> EasyJet | <strong>Voo:</strong> U2 4893</p>
+  <p><strong>Partida:</strong> 20:20 | <strong>Chegada:</strong> 22:05</p>
+  <p><strong>Hospedagem:</strong> Hotel Giolli Nazionale</p>
+  <p><strong>Ticket de Embarque:</strong> <a href="arquivos/ticket-frankfurt-roma.pdf" target="_blank">Download</a></p>
 </section>
 
 <section id="pendencias">
   <h2>Pendências</h2>
   <ul>
-    <li>📌 <strong>12/10:</strong> Comprar ingresso para visita ao Coliseu em Roma.</li>
-    <li>📌 <strong>13/10:</strong> Definir e reservar hospedagem em Assis.</li>
-    <li>📌 <strong>14/10:</strong> Comprar ticket de trem de Florença para Veneza.</li>
-    <li>📌 <strong>21/10:</strong> Comprar ticket de trem de Veneza para Milão.</li>
-    <li>📌 <strong>22/10:</strong> Definir hospedagem em Milão.</li>
+    <li><strong>12/10:</strong> Comprar ingresso para visita ao Coliseu</li>
+    <li><strong>13/10:</strong> Definir hospedagem em Assis</li>
+    <li><strong>22/10:</strong> Definir hospedagem em Milão</li>
+    <li><strong>19/10:</strong> Comprar ticket de trem Florença → Veneza</li>
+    <li><strong>21/10:</strong> Comprar ticket de trem Veneza → Milão</li>
   </ul>
 </section>
 
