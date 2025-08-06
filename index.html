@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guia Viagem Itália</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    function irParaDiaAtual() {
-      const hoje = new Date();
-      const dias = document.querySelectorAll('[id^="dia-"]');
-      for (let i = 0; i < dias.length; i++) {
-        const data = new Date(dias[i].getAttribute('data-date'));
-        if (hoje < data) {
-          dias[i].scrollIntoView({ behavior: 'smooth' });
-          break;
-        }
-      }
-    }
-  </script>
-</head>
-
-<body>
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Viagem - Itália 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head><body>
   <header>
-    <h1>Guia Viagem Itália</h1>
+    <h1>Guia de Viagem - Itália 2025</h1>
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
@@ -35,135 +17,89 @@
         <li><a href="#dicas">Dicas de Viagem</a></li>
         <li><a href="#nics">NICs</a></li>
         <li><a href="#uteis">Links Úteis</a></li>
-        <li><a href="#sumario">Sumário Breve do Cronograma</a></li>
+        <li><a href="#sumario">Sumário</a></li>
         <li><a href="#pendencias">Pendências</a></li>
         <li><a href="#downloads">Downloads</a></li>
-        <li><a href="#" onclick="irParaDiaAtual()">Ir para o dia da viagem</a></li>
       </ul>
     </nav>
-  </header>
-
-  <main>
+    <div class="ir-para-dia">
+      <button onclick="irParaDiaAtual()">Ir para o dia da viagem</button>
+    </div>
+  </header>  <main>
     <section id="cronograma">
-      <h2>Cronograma Diário</h2>
+      <h2>Cronograma Diário</h2><h3 id="08-10">08 de Outubro de 2025 – Saída de Palmas</h3>
+  <p><strong>Trecho Doméstico:</strong> Palmas (PMW) → São Paulo (GRU)</p>
+  <p><strong>Companhia Aérea:</strong> LATAM | <strong>Voo:</strong> LA3611</p>
+  <p><strong>Partida:</strong> 10:30 | <strong>Chegada:</strong> 12:50</p>
+  <p><strong>Bagagem:</strong> 1 item pessoal + 1 mala de cabine</p>
+  <p><strong>Ação:</strong> Após o desembarque em Guarulhos, retire sua bagagem para o novo despacho no voo internacional.</p>
+  <p><a href="arquivos/Comprovante-LATAM-LA9579432SJTJ.pdf" target="_blank">Cartão de embarque Geraldo</a></p>
+  <p><a href="arquivos/Comprovante-LATAM-LA9575470YLCW.pdf" target="_blank">Cartão de embarque Patrícia</a></p>
 
-      <div id="dia-08" data-date="2025-10-08">
-        <h3>08/10 – Saída de Palmas</h3>
-        <p><strong>Ação:</strong> Início da viagem com embarque em Palmas.</p>
-        <p><strong>Voos:</strong></p>
-        <ul>
-          <li>LATAM LA3641 – Palmas (PMW) → São Paulo (GRU) – 11h10 → 14h45</li>
-          <li>LATAM LA8070 – São Paulo (GRU) → Frankfurt (FRA) – 22h40 → 15h20 (+1)</li>
-        </ul>
-        <p><strong>Cartões de embarque:</strong></p>
-        <ul>
-          <li><a href="/arquivos/cartao-embarque-geraldo-ida.pdf" target="_blank">Geraldo – trecho Palmas → SP</a></li>
-          <li><a href="/arquivos/cartao-embarque-patricia-ida.pdf" target="_blank">Patrícia – trecho Palmas → SP</a></li>
-          <li><a href="/arquivos/LATAM_YDLRAZ_LA9572260HAWZ_NETO.pdf" target="_blank">Geraldo – trecho SP → Frankfurt</a></li>
-          <li><em>Cartão de embarque da Patrícia no trecho SP → Frankfurt ainda não enviado</em></li>
-        </ul>
-      </div>
+  <hr>
 
-      <div id="dia-09" data-date="2025-10-09">
-        <h3>09/10 – Chegada em Roma</h3>
-        <p><strong>Ação:</strong> Chegada à Itália após conexão em Frankfurt.</p>
-        <p><strong>Observações:</strong></p>
-        <ul>
-          <li>A bagagem <strong>não estará despachada até Roma</strong>; será necessário <strong>retirá-la em Frankfurt</strong> e despachar novamente para Roma (voo EasyJet).</li>
-          <li><strong>Ticket disponível:</strong> <a href="/arquivos/cartao-embarque-frankfurt-roma.pdf" target="_blank">Baixar PDF do voo Frankfurt → Roma</a></li>
-          <li>Cada passageiro terá direito a despachar 1 mala de até 23kg (EasyJet)</li>
-        </ul>
-      </div>
+  <p><strong>Trecho Internacional:</strong> São Paulo (GRU) → Frankfurt (FRA)</p>
+  <p><strong>Companhia Aérea:</strong> Lufthansa | <strong>Voo:</strong> LH507</p>
+  <p><strong>Rota:</strong> GRU Terminal 3 → FRA Terminal 1</p>
+  <p><strong>Partida:</strong> 23:45 | <strong>Chegada:</strong> 16:25 do dia seguinte</p>
+  <p><strong>Bagagem:</strong> 1 item pessoal, 1 mala de mão (10 kg), 1 mala despachada (23 kg)</p>
+  <p><strong>Ação:</strong> Realize o check-in internacional no Terminal 3</p>
+  <p><a href="arquivos/LATAM_YDLRAZ_LA9572260HAWZ_NETO.pdf" target="_blank">Cartão de embarque Geraldo (GRU-FRA)</a></p>
+  <p><strong>Pendência:</strong> Envio do cartão de embarque de Patrícia (GRU-FRA)</p>
 
-      <div id="dia-10" data-date="2025-10-10">
-        <h3>10/10 – Roma – Exploração Inicial</h3>
-        <p>Exploração leve de Roma, após chegada do dia anterior.</p>
-      </div>
+  <h3 id="09-10">09 de Outubro de 2025 – Chegada em Roma</h3>
+  <p><strong>Chegada em Frankfurt:</strong> 16:25</p>
+  <p><strong>Desembarque:</strong> Retire a bagagem em Frankfurt para novo despacho.</p>
+  <p><strong>Trecho:</strong> Frankfurt (FRA) → Roma (FCO)</p>
+  <p><strong>Companhia Aérea:</strong> EasyJet</p>
+  <p><strong>Partida:</strong> 21:00 | <strong>Chegada:</strong> 22:55</p>
+  <p><strong>Bagagem:</strong> Cada passageiro tem direito a uma mala despachada de 23 kg.</p>
+  <p><strong>Pendência:</strong> Adicionar cartão de embarque EasyJet</p>
+  <p><strong>Hospedagem:</strong> Hotel em Roma já definido</p>
 
-      <div id="dia-13" data-date="2025-10-13">
-        <h3>13/10 – Assis → Toscana Sul (Val d’Orcia & Montalcino)</h3>
-        <p><strong>Informações da Reserva de Carro (Rentcars)</strong></p>
-        <ul>
-          <li><strong>Voucher:</strong> 1192048401</li>
-          <li><strong>Condutor:</strong> Geraldo Farias, CPF 693.061.761-04</li>
-          <li><strong>Locadora:</strong> Europcar Rent a Car</li>
-          <li><strong>Telefone da Loja:</strong> +39 06 488 2854</li>
-          <li><strong>Retirada:</strong>
-            <ul>
-              <li>Data/Hora: 13 de Outubro de 2025 (Segunda-feira), 10:00</li>
-              <li>Local: Estação Ferroviária Roma Termini, Roma, Itália</li>
-              <li>Endereço: Via Giolitti 34, Roma, Itália</li>
-            </ul>
-          </li>
-          <li><strong>Devolução:</strong>
-            <ul>
-              <li>Data/Hora: 18 de Outubro de 2025 (Sábado), 21:00</li>
-              <li>Local: Aeroporto Peretola, FLR, Florença, Itália</li>
-              <li>Endereço: Florence Airport, Amerigo Vespucci Apt, Florença, Itália</li>
-            </ul>
-          </li>
-          <li><strong>Veículo:</strong> Peugeot 208 (ou similar) - Econômico</li>
-          <li><strong>Valores:</strong>
-            <ul>
-              <li>Valor Total da Reserva: €294,98</li>
-              <li>Valor Pago Online: €294,98</li>
-              <li>Valor a ser pago no destino: €0,00</li>
-              <li>Caução de Garantia: A partir de €500,00.</li>
-            </ul>
-          </li>
-          <li><strong>Proteções Inclusas:</strong>
-            <ul>
-              <li>Proteção contra danos e avarias ao veículo.</li>
-              <li>Proteção contra roubo do veículo alugado.</li>
-              <li>Cobertura para danos materiais e pessoais causados a terceiros.</li>
-            </ul>
-          </li>
-          <li><strong>Política de Abastecimento:</strong> O veículo deve ser devolvido com o mesmo nível de combustível da retirada.</li>
-        </ul>
-      </div>
-    </section>
+</section>
 
-    <section id="carro">
-      <h2>Informações da Reserva de Carro (Rentcars)</h2>
-      <ul>
-        <li><strong>Voucher:</strong> 1192048401</li>
-        <li><strong>Condutor:</strong> Geraldo Farias, CPF 693.061.761-04</li>
-        <li><strong>Locadora:</strong> Europcar Rent a Car</li>
-        <li><strong>Telefone da Loja:</strong> +39 06 488 2854</li>
-        <li><strong>Retirada:</strong>
-          <ul>
-            <li>Data/Hora: 13 de Outubro de 2025 (Segunda-feira), 10:00</li>
-            <li>Local: Estação Ferroviária Roma Termini, Roma, Itália</li>
-            <li>Endereço: Via Giolitti 34, Roma, Itália</li>
-          </ul>
-        </li>
-        <li><strong>Devolução:</strong>
-          <ul>
-            <li>Data/Hora: 18 de Outubro de 2025 (Sábado), 21:00</li>
-            <li>Local: Aeroporto Peretola, FLR, Florença, Itália</li>
-            <li>Endereço: Florence Airport, Amerigo Vespucci Apt, Florença, Itália</li>
-          </ul>
-        </li>
-        <li><strong>Veículo:</strong> Peugeot 208 (ou similar) - Econômico</li>
-        <li><strong>Valores:</strong>
-          <ul>
-            <li>Valor Total da Reserva: €294,98</li>
-            <li>Valor Pago Online: €294,98</li>
-            <li>Valor a ser pago no destino: €0,00</li>
-            <li>Caução de Garantia: A partir de €500,00.</li>
-          </ul>
-        </li>
-        <li><strong>Proteções Inclusas:</strong>
-          <ul>
-            <li>Proteção contra danos e avarias ao veículo.</li>
-            <li>Proteção contra roubo do veículo alugado.</li>
-            <li>Cobertura para danos materiais e pessoais causados a terceiros.</li>
-          </ul>
-        </li>
-        <li><strong>Política de Abastecimento:</strong> O veículo deve ser devolvido com o mesmo nível de combustível da retirada.</li>
-      </ul>
-    </section>
-  </main>
-</body>
+<section id="pendencias">
+  <h2>Pendências</h2>
+  <ul>
+    <li>Comprar ingresso para visita no Coliseu (12/10)</li>
+    <li>Definir hospedagem em Assis (13/10)</li>
+    <li>Definir hospedagem em Milão</li>
+    <li>Comprar ticket de trem Florença → Veneza (19/10)</li>
+    <li>Comprar ticket de trem Veneza → Milão (21/10)</li>
+    <li>Adicionar cartão de embarque EasyJet (09/10)</li>
+    <li>Adicionar cartão de embarque Patrícia (GRU → FRA)</li>
+  </ul>
+</section>
 
-</html>
+  </main>  <footer>
+    <p>Guia pessoal de viagem – Geraldo Neto © 2025</p>
+  </footer>  <script>
+    function irParaDiaAtual() {
+      const hoje = new Date();
+      const dias = [
+        { data: new Date("2025-10-08"), id: "08-10" },
+        { data: new Date("2025-10-09"), id: "09-10" },
+        { data: new Date("2025-10-10"), id: "10-10" },
+        { data: new Date("2025-10-11"), id: "11-10" },
+        { data: new Date("2025-10-12"), id: "12-10" },
+        { data: new Date("2025-10-13"), id: "13-10" },
+        { data: new Date("2025-10-14"), id: "14-10" },
+        { data: new Date("2025-10-15"), id: "15-10" },
+        { data: new Date("2025-10-16"), id: "16-10" },
+        { data: new Date("2025-10-17"), id: "17-10" },
+        { data: new Date("2025-10-18"), id: "18-10" },
+        { data: new Date("2025-10-19"), id: "19-10" },
+        { data: new Date("2025-10-20"), id: "20-10" },
+        { data: new Date("2025-10-21"), id: "21-10" },
+        { data: new Date("2025-10-22"), id: "22-10" },
+        { data: new Date("2025-10-23"), id: "23-10" }
+      ];
+      const proximoDia = dias.find(d => d.data > hoje);
+      if (proximoDia) {
+        window.location.hash = `#${proximoDia.id}`;
+      } else {
+        alert("A viagem já terminou ou a data está incorreta.");
+      }
+    }
+  </script></body></html>
