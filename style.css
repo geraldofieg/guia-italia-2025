@@ -1,69 +1,177 @@
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos principais para o guia de viagem */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 2rem;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-h1, h2, h3 {
-    color: #1a4a7c;
-    margin-bottom: 0.5rem;
+header {
+  background-color: #0a436b;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+  background-color: #125e94;
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
 }
 
 section {
-    margin-bottom: 2.5rem;
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
 }
 
-nav {
-    background-color: #1a4a7c;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
+section h2 {
+  color: #0a436b;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0a436b;
+  padding-bottom: 5px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 1.5rem;
-    font-weight: bold;
+section h3 {
+  color: #0a436b;
+  margin-top: 0;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.day {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.button-dia {
-    display: inline-block;
-    margin: 1rem 0;
-    padding: 0.7rem 1.2rem;
-    font-size: 1rem;
-    background-color: #1a4a7c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.day ul {
+  margin-top: 0;
 }
 
-.button-dia:hover {
-    background-color: #163d63;
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+table thead {
+  background-color: #eef3f7;
+}
+
+table th,
+table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  font-weight: bold;
+  color: #0a436b;
+}
+
+.summary-list,
+.download-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.summary-list li,
+.download-list li {
+  margin-bottom: 8px;
+}
+
+.download-list a {
+  color: #0a436b;
+  text-decoration: none;
+}
+
+.download-list a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #0a436b;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 4rem;
+  background-color: #0a436b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+  }
 }
