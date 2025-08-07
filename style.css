@@ -96,3 +96,14 @@ a {
 @media (max-width: 600px) {
   .hotel-card { padding: 12px; font-size: 15px; }
 }
+
+.download-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .download-list li {
+      padding: 8px 0;
+    }
