@@ -85,3 +85,14 @@ a {
     align-items: flex-start;
   }
 }
+
+.hotel-card {
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f6faff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+@media (max-width: 600px) {
+  .hotel-card { padding: 12px; font-size: 15px; }
+}
