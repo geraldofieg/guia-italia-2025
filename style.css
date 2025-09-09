@@ -132,6 +132,19 @@ table.vip-lounge-table td:first-child {
   padding: 8px 0;
 }
 
+.download-list .download-category {
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+.download-list .download-category:first-child {
+  margin-top: 0;
+}
+
 footer {
   text-align: center;
   padding: 16px 10px;
