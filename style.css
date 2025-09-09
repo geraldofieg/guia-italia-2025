@@ -59,54 +59,78 @@ h2 {
   margin-top: 0;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-
-th {
-  background-color: #eee;
-}
-
 a {
   color: #0a436b;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+/* --- CARD STYLES --- */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-.hotel-card {
+/* Generic card class */
+.card {
   border: 1px solid #ececec;
   border-radius: 8px;
   padding: 16px;
-  background: #f6faff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-}
-@media (max-width: 600px) {
-  .hotel-card { padding: 12px; font-size: 15px; }
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
+.flight-card, .bag-card {
+  background: #fafafa;
+}
+
+.hotel-card {
+  background: #f6faff;
+}
+
+/* --- TABLE STYLES --- */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table.vip-lounge-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+table.vip-lounge-table th,
+table.vip-lounge-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.vip-lounge-table thead tr {
+  background-color: #f3f3f3;
+}
+
+table.vip-lounge-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table.vip-lounge-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* --- MISC STYLES --- */
 .download-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      padding-left: 0;
-      list-style: none;
-    }
-    .download-list li {
-      padding: 8px 0;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 0;
+  list-style: none;
+}
+.download-list li {
+  padding: 8px 0;
+}
 
 footer {
   text-align: center;
@@ -134,4 +158,19 @@ footer {
 }
 #btn-topo:hover {
   background: #145ea8;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 12px;
+    font-size: 15px;
+  }
 }
