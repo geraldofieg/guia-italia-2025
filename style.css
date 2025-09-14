@@ -187,3 +187,20 @@ footer {
     font-size: 15px;
   }
 }
+
+.lang-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.lang-selector a {
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+.lang-selector a:hover {
+  border-color: #ccc;
+}
