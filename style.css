@@ -173,6 +173,32 @@ footer {
   background: #145ea8;
 }
 
+/* --- Weather Forecast Styles --- */
+.weather-forecast {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 12px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #4682b4;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.weather-forecast span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.weather-forecast .error {
+  color: #d8000c;
+  background-color: #ffdab9;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
 /* --- MEDIA QUERIES --- */
 @media (max-width: 768px) {
   nav ul {
